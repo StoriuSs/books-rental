@@ -9,5 +9,8 @@ import java.util.UUID;
 
 @Repository
 public interface BorrowItemRepository extends JpaRepository<BorrowItem, UUID> {
+    // SELECT * FROM borrow_items 
+    // JOIN borrow_receipts ON borrow_items.receipt_id = borrow_receipts.id 
+    // WHERE borrow_receipts.customer_id = ?1 AND borrow_items.status = ?2;
     List<BorrowItem> findByReceiptCustomerIdAndStatus(UUID customerId, BorrowItem.BorrowStatus status);
 }

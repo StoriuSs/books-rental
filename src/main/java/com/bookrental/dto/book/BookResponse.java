@@ -1,11 +1,11 @@
-package com.bookrental.dto;
+package com.bookrental.dto.book;
 
 import lombok.Data;
 import java.math.BigDecimal;
 import java.util.UUID;
 
 @Data
-public class BookDTO {
+public class BookResponse {
     private UUID id;
     private String title;
     private String author;
