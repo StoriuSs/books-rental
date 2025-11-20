@@ -17,7 +17,7 @@ public class Admin extends BaseEntity {
     private UUID id;
 
     @Column(nullable = false, unique = true)
-    private String username;
+    private String email;
 
     private String password;
 

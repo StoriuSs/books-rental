@@ -30,3 +30,5 @@ Thumbs.db
 # Docker
 postgres_data/
 .env
+
+api_curls.txt
