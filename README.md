@@ -24,11 +24,6 @@ Sử dụng Docker Compose để khởi tạo PostgreSQL database:
 docker-compose up -d
 ```
 
-Database sẽ chạy tại cổng `5433` (để tránh xung đột với cổng mặc định 5432).
-*   **User**: `storius`
-*   **Password**: `123456`
-*   **Database**: `book_rental`
-
 ### 2. Chạy ứng dụng
 
 Sử dụng Maven Wrapper để chạy ứng dụng:
@@ -44,5 +39,5 @@ Sử dụng Maven Wrapper để chạy ứng dụng:
 ### 3. Chạy Test
 
 ```bash
-.\mvnw.cmd test
+.\mvnw.cmd test -Dtest=service-name-you-want-to-test
 ```
